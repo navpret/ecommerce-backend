@@ -1,0 +1,28 @@
+###Create New User
+POST http://localhost:4020/user/register/
+Content-Type: application/json
+
+{
+    "name": "Admin",
+    "email": "randomid4mohit@gmail.com",
+    "password": "Admin123"
+}
+
+### Get Access Token
+GET http://localhost:4020/user/refresh_token
+
+### Login 
+POST http://localhost:4020/user/login
+Content-Type: application/json
+
+{
+    "email": "www.mohit2004@gmail.com",
+    "password": "Gotohavai158"
+}
+
+### Logout
+GET http://localhost:4020/user/logout
+
+### getUser
+GET http://localhost:4020/user/infor
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOGUzMTUxMjViMzkyNjhhOWRjNTljZCIsImlhdCI6MTYxOTkzMjk2MSwiZXhwIjoxNjIwMDE5MzYxfQ.BJ1heGLUKKZkw_3rur8nBHkJ01VXT4gFSgp2FyUEXeI

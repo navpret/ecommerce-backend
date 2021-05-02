@@ -1,0 +1,14 @@
+GET http://localhost:4020/api/products
+
+### Create Product
+POST http://localhost:4020/api/products
+Content-Type: application/json
+{
+    "product_id": "pr01", 
+    "title": "White Sneakers",
+    "price": 39,
+    "description": "White sneakers with anti absorb technoloy, making you aloiveljkadslkf",
+    "content": "content",
+    "images": [],
+    "category": "apple"
+}

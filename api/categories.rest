@@ -1,0 +1,21 @@
+### Get All Categories
+GET http://localhost:4020/api/category
+
+### Create new Category
+POST http://localhost:4020/api/category
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOGUzMTUxMjViMzkyNjhhOWRjNTljZCIsImlhdCI6MTYxOTkzMjk2MSwiZXhwIjoxNjIwMDE5MzYxfQ.BJ1heGLUKKZkw_3rur8nBHkJ01VXT4gFSgp2FyUEXeI
+
+{
+    "name": "category to delete"
+}
+### Deleting a Category
+DELETE http://localhost:4020/api/category/608e38c83d957370306fc647
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOGUzMTUxMjViMzkyNjhhOWRjNTljZCIsImlhdCI6MTYxOTkzMjk2MSwiZXhwIjoxNjIwMDE5MzYxfQ.BJ1heGLUKKZkw_3rur8nBHkJ01VXT4gFSgp2FyUEXeI
+### Updating a category
+PUT  http://localhost:4020/api/category/608e38c83d957370306fc647
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOGUzMTUxMjViMzkyNjhhOWRjNTljZCIsImlhdCI6MTYxOTkzNTE2MiwiZXhwIjoxNjIwMDIxNTYyfQ.l_IdC_iXYKaF5At2H_iUBaxOB0h57ZugOjasLNjFSsI
+{
+    "name": "New Category"
+}
+###

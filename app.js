@@ -35,6 +35,9 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/user', require('./routes/userRouter'))
+app.use('/api', require('./routes/categoryRouter'))
+app.use('/api', require('./routes/uploadRouter'))
+app.use('/api', require('./routes/productRouter'))
 
 // Start at PORT
 app.listen(PORT, () => {
