@@ -38,6 +38,7 @@ app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRouter'))
 app.use('/api', require('./routes/uploadRouter'))
 app.use('/api', require('./routes/productRouter'))
+app.use('/api', require('./routes/orderRouter'))
 
 // Start at PORT
 app.listen(PORT, () => {
