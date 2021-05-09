@@ -103,7 +103,7 @@ const productCtrl = {
                 category 
             } = req.body
 
-            if (!images) return res.status(400).json({ message: "No image iploaded" })
+            if (!images) return res.status(400).json({ message: "No image uploaded" })
         
             await Products.findOneAndUpdate({_id: req.params.id}, {
                 title, price,

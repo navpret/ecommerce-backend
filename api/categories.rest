@@ -2,12 +2,12 @@
 GET http://localhost:4020/api/category
 
 ### Create new Category
-POST http://localhost:4020/api/category
+POST https://http://ecommerce-backend-wlv.herokuapp.com/api/category
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwOGUzMTUxMjViMzkyNjhhOWRjNTljZCIsImlhdCI6MTYxOTkzMjk2MSwiZXhwIjoxNjIwMDE5MzYxfQ.BJ1heGLUKKZkw_3rur8nBHkJ01VXT4gFSgp2FyUEXeI
 
 {
-    "name": "category to delete"
+    "name": "First Category"
 }
 ### Deleting a Category
 DELETE http://localhost:4020/api/category/608e38c83d957370306fc647
