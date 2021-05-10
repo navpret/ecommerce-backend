@@ -39,7 +39,7 @@ class APIfeatures {
 
     pagination() {
         const page = this.queryString.page * 1 || 1
-        const limit = this.queryString.limit * 1 || 3
+        const limit = this.queryString.limit * 1 || 20
         const skip = (page - 1) * limit
         this.query = this.query.skip(skip).limit(limit)
 
@@ -68,18 +68,18 @@ const productCtrl = {
     createProducts: async (req, res) =>  {
         try {
             const { product_id, title, price,
-                description, content, images,
-                category 
+                description, images,
+                category, content
             } = req.body
 
             if (!images) return res.status(400).json({ message: "No image Uplaoded" })
 
             const product = await Products.findOne({ product_id })
             if (product)
-                return res.status(400).json({ mesasge: "Product alredy exists" })
+                return res.status(400).json({ mesasge: "Product with the given ID alredy exists" })
 
             const newProduct = new Products({
-                product_id, title, price, description, content, images, category
+                product_id, title, price, description, images, category, content
             })
             
             await newProduct.save()
